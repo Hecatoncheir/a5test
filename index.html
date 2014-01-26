@@ -2,7 +2,7 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" ng-app="App"> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,6 +14,9 @@
         <link rel="stylesheet" type="text/css" href="css/main.css"> <!-- boilerplate -->
         <link rel="stylesheet" type="text/css" href="css/fonts.css"> <!-- fonts -->
         <link rel="stylesheet/less" type="text/css" href="less/contacts.less"> <!-- Основные стили -->
+
+        <script type="text/javascript" src="js/angular.min.js"></script>
+        <script type="text/javascript" src="js/angular-ymaps.min.js"></script>
 
     </head>
     <body>
@@ -37,13 +40,109 @@
                         </div>
                     </div>
 
-
+                    <nav>
+                        <a href="#">Преимущества</a>
+                        <span></span>
+                        <a href="#">Стоимость</a>
+                        <span></span>
+                        <a href="#" class="active">создать сайт</a>
+                        <span></span>
+                        <a href="#">помощь</a>
+                    </nav>
 
                 </div> <!-- END HEADER INFO -->
+
+
+                <div class="login"> <!-- LOGIN -->
+                    <div class="login-buttons">
+                        <a href="#">Войти</a>
+                        <a href="#">Регистрация</a>           
+                    </div>
+
+                    <div class="login-lc">
+                        <span>личный кабинет</span>
+                    </div>
+
+                </div><!-- END LOGIN -->
+
 
             </div> <!-- END HEADER MAIN -->
 
         </header>
+
+        <section class="container"><!-- CONTAINER -->
+            <header>
+                <h1>У вас вопрос — у нас ответ</h1>
+            </header>
+
+            <section> <!-- INFORMATION -->
+
+                <nav class="menu">
+                    <a href="#">О проекте</a>
+                    <a href="#">Вакансии</a>
+                    <a href="#" class="active">Контакты</a>
+                </nav>
+
+                <div class="support">
+                    Служба поддержки <br/> <span class="phone-number">+7 (499) 537-53-28</span> 
+                    <a href="#" class="button-call">
+                        <span>Позвоните нам сейчас</span>
+                    </a>
+                </div>
+
+                <div class="ya-map"></div>
+
+            </section><!-- END INFORMATION -->
+
+            <aside> <!-- ARTICLES -->
+                <article>
+                    <header><h3>Бесплатная линия для России</h3></header>
+                    <p>
+                        <span class="phone">8 800 333-23-28</span><br/>
+                        <span class="icon-clock"></span>Работаем круглосуточно<br/>
+                        Электронная почта: <a href="#">nfo@a5.ru</a>
+                    </p>
+                </article>
+                <article>
+                    <header><h3>Стать партнером очень просто!</h3></header>
+                    <p>
+                        Пишите на <a href="#">partner@a5.ru</a><br/>
+                        <a href="#">Реферальная програма</a><br/>
+                        <a href="#">White Label</a><br/>
+                    </p>
+                </article>
+                <article>
+                    <header><h3>Развитие бизнеса</h3></header>
+                    <p>
+                        Если есть, что предложить, пишите на <a href="#">biz@a5.ru</a>
+                    </p>
+                </article>
+                <article>
+                    <header><h3>СМИ</h3></header>
+                    <p>
+                        Хотите о нас написать? Будем рады ответить на вопросы <a href="#">pr@a5.ru</a>
+                    </p>
+                </article>
+            </aside> <!-- END ARTICLES -->
+
+            <section class="feedback"> <!-- FEEDBACK -->
+
+                <nav class="social-links" >
+                    <span>Следите за нами:</span><br/>
+                    <a href="#"><span class="tw"></span>Твиттер</a>
+                    <a href="#"><span class="vk"></span>Вконтакте</a>
+                    <a href="#"><span class="fb"></span>Фэйсбук</a>
+                    <a href="#"><span class="blog"></span>Наш блог</a>
+                    <a href="#"><span class="assistance"></span>Онлайн-консультант</a>
+                </nav>
+
+                <div class="feedback-form">
+                    
+                </div>
+
+            </section><!-- END FEEDBACK -->
+
+        </section><!-- END CONTAINER -->
 
 
         <script type="text/javascript" src="js/less-1.3.3.min.js"></script> <!-- Отключить при рендере на сервере -->
