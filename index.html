@@ -71,11 +71,11 @@
         </header>
 
         <section class="container"><!-- CONTAINER -->
-            <header>
+            <header class="container-header">
                 <h1>У вас вопрос — у нас ответ</h1>
             </header>
 
-            <section> <!-- INFORMATION -->
+            <section class="information"> <!-- INFORMATION -->
 
                 <nav class="menu">
                     <a href="#">О проекте</a>
@@ -137,12 +137,36 @@
                 </nav>
 
                 <div class="feedback-form">
-                    
+                    <header><span>Напишите здесь свой вопрос, пожелание или предложение</span></header>
+
+                    <form name="form"> <!-- FORM -->
+                        <div class="name">
+                            <span>Как вас зовут</span>
+                                <input type="text" name="name" placeholder="Иванов Степан Семенович" ng-model="name" required />
+                        </div>
+
+                        <div class="email">
+                            <span>Электронная почта</span>
+                                <input type="text" name="email" placeholder="ivanov@mail.ru" ng-model="email" />
+                        </div>
+
+                        <div class="text">
+                                <textarea type="text" name="text" placeholder="Текст" ng-model="text" ></textarea>
+                        </div>
+
+                        <input type="submit" value="Отправить">
+
+                    </form> <!-- END FORM -->
+
                 </div>
 
             </section><!-- END FEEDBACK -->
 
         </section><!-- END CONTAINER -->
+
+        <footer> <!-- FOOTER -->
+            
+        </footer><!-- END FOOTER -->
 
 
         <script type="text/javascript" src="js/less-1.3.3.min.js"></script> <!-- Отключить при рендере на сервере -->
